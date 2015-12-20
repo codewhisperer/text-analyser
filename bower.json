@@ -1,0 +1,21 @@
+{
+  "name": "text-analyser",
+  "description": "Analyse text entered by user and display details in a table.",
+  "main": "index.js",
+  "authors": [
+    "Michael Langmayr"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/codewhisperer/text-analyser",
+  "moduleType": [],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.3.6"
+  }
+}

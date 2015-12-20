@@ -1,0 +1,16 @@
+<h1 ng-if="vm.results">Results</h1>
+<table class="table">
+  <thead>
+    <tr>
+      <th ng-repeat="header in vm.headers">{{header}}</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr ng-repeat="row in vm.table">
+      <td ng-repeat="column in row track by $index">{{column}}</td>
+    </tr>
+  </tbody>
+</table>
+<p ng-if="vm.results.wordCount">Word count: {{vm.results.wordCount}}</p>
+<p ng-if="vm.commaCount">Comma count: {{vm.commaCount}}</p>
+<p ng-if="vm.fullStopCount">Full stop count: {{vm.fullStopCount}}</p>

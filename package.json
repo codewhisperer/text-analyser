@@ -1,0 +1,50 @@
+{
+  "name": "text-analyser",
+  "version": "1.0.0",
+  "description": "Analyse text entered by user and display details in a table.",
+  "main": "index.js",
+  "scripts": {
+    "test": "grunt karma",
+    "dev": "grunt webpack && grunt watch",
+    "start": "http-server ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/codewhisperer/text-analyser.git"
+  },
+  "author": "Michael Langmayr",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/codewhisperer/text-analyser/issues"
+  },
+  "homepage": "https://github.com/codewhisperer/text-analyser#readme",
+  "devDependencies": {
+    "angular-mocks": "^1.4.8",
+    "css-loader": "^0.23.0",
+    "file-loader": "^0.8.5",
+    "grunt": "^0.4.5",
+    "grunt-cli": "^0.1.13",
+    "grunt-contrib-watch": "^0.6.1",
+    "grunt-karma": "^0.12.1",
+    "grunt-webpack": "^1.0.11",
+    "http-server": "^0.8.5",
+    "jasmine-core": "^2.4.1",
+    "karma": "^0.13.15",
+    "karma-jasmine": "^0.3.6",
+    "karma-phantomjs-launcher": "^0.2.1",
+    "karma-webpack": "^1.7.0",
+    "phantomjs": "^1.9.19",
+    "raw-loader": "^0.5.1",
+    "style-loader": "^0.8.1",
+    "uglify": "^0.1.5",
+    "uglify-loader": "^1.3.0",
+    "url-loader": "^0.5.7",
+    "webpack": "^1.12.9",
+    "webpack-dev-server": "^1.14.0"
+  },
+  "dependencies": {
+    "angular": "^1.4.8",
+    "bower": "^1.7.1",
+    "lodash": "^3.10.1"
+  }
+}
