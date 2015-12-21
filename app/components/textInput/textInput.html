@@ -1,7 +1,7 @@
 <h1>Text analyser</h1>
 <form novalidate name="form">
   <div class="form-group">
-    <textarea class="form-control" ng-model="vm.text" name="inputText" rows="3" required></textarea>
+    <textarea class="form-control" ng-model="vm.text" name="inputText" ng-change="vm.validate()" rows="3" required></textarea>
     <br />
     <div ng-show="form.$submitted || form.inputText.$touched">
       <span ng-show="!vm.wordCountValid">Please enter text between 5 and 500 words.</span>
@@ -12,4 +12,4 @@
   <button class="btn" ng-click="vm.analyse()" ng-disabled="form.inputText.$error.required || !vm.wordCountValid || vm.containsNumbers">Analyse</button>
 </form>
 
-<results-table results="vm.results" comma-count="vm.commaCount" full-stop-count="vm.fullStopCount"></results-table>
+<results-table table="vm.table" headers="vm.headers" comma-count="{{vm.commaCount}}" full-stop-count="{{vm.fullStopCount}}" word-count="{{vm.results.wordCount}}"></results-table>
